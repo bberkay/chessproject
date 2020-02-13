@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="satrancdatabase2DataSet" targetNamespace="http://tempuri.org/satrancdatabase2DataSet.xsd" xmlns:mstns="http://tempuri.org/satrancdatabase2DataSet.xsd" xmlns="http://tempuri.org/satrancdatabase2DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="satrancdatabase2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="satrancdatabase2ConnectionString (Settings)" PropertyReference="ApplicationSettings.satrancproje.Properties.Settings.GlobalReference.Default.satrancdatabase2ConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="listeTableAdapter" GeneratorDataComponentClassName="listeTableAdapter" Name="liste" UserDataComponentName="listeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="satrancdatabase2ConnectionString (Settings)" DbObjectName="liste" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Soyad FROM liste</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Soyad" DataSetColumn="Soyad" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="satrancdatabase2DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="satrancdatabase2DataSet" msprop:Generator_UserDSName="satrancdatabase2DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="liste" msprop:Generator_TableClassName="listeDataTable" msprop:Generator_TableVarName="tableliste" msprop:Generator_TablePropName="liste" msprop:Generator_RowDeletingName="listeRowDeleting" msprop:Generator_RowChangingName="listeRowChanging" msprop:Generator_RowEvHandlerName="listeRowChangeEventHandler" msprop:Generator_RowDeletedName="listeRowDeleted" msprop:Generator_UserTableName="liste" msprop:Generator_RowChangedName="listeRowChanged" msprop:Generator_RowEvArgName="listeRowChangeEvent" msprop:Generator_RowClassName="listeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Soyad" msprop:Generator_ColumnVarNameInTable="columnSoyad" msprop:Generator_ColumnPropNameInRow="Soyad" msprop:Generator_ColumnPropNameInTable="SoyadColumn" msprop:Generator_UserColumnName="Soyad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
